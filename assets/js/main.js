@@ -75,6 +75,11 @@ sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
 
-
+function enviar_datos(){
+    const name = document.getElementById('name').value
+    const email = document.getElementById('email').value
+    const message = document.getElementById('message').value
+    window.open(`https://api.whatsapp.com/send?phone=+595982636411&text=${name} - ${email} - ${message}.`,'_blank')
+}
 
 
